@@ -1,0 +1,64 @@
+:root {
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --white: hsl(0, 0%, 100%);
+    --gradient-color: linear-gradient(165deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    --gradient-background: linear-gradient(180deg, rgba(45, 49, 77, 1), rgba(45, 49, 77, 0.1));
+
+    --text-size-mobile: 18px;
+    --text-size-desktop: 14px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+p {
+    color: var(--grayish-blue);
+}
+
+body {
+    width: 100%;
+    margin-inline: auto;
+    font-family: "Public Sans", serif;
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+
+body.hidden {
+    overflow: hidden;
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+/* .public-sans-<uniquifier> {
+    font-family: "Public Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
+
